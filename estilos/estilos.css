@@ -1,0 +1,137 @@
+/********* estilo de Realidad Aumentada ***********/
+
+/********* estilo general **********/
+
+
+body {background-color: rgb(250, 250, 250);
+  font-family:Verdana, Geneva, Tahoma, sans-serif}
+
+#wrapper {width:90%;
+      margin:0 auto;}
+
+/******** estilo de header **********/
+
+header {background-image: url("../imagenes/cabecera.jpg");
+    background-size: cover;
+    background-position: right;
+    color:white;
+    height:300px;
+    position:relative;}
+
+
+/********** estilo de nav *************/
+nav {background-color:rgb(14, 12, 12);}
+
+nav ul {margin:0;padding:0}
+
+nav ul li {display:inline-block;
+        padding:15px;
+        }
+nav ul li a {text-decoration:none;
+          color:white;
+          font-weight:bold;
+          font-size:1.2em;
+          }
+nav ul li a:hover {color:rgb(219, 186, 76);}
+/********* estilo de main ***********/
+
+main {background-color: rgb(44, 58, 138);
+    padding: 35px;
+    font-size:1.2em;}
+
+main h1 {margin-top:0;
+       color:rgb(226, 209, 211);
+       text-align:center;}
+main p {text-align:justify;
+      text-indent:3em;}
+
+main img {width:20%;
+        margin:2%;
+        border-radius:20px;
+        box-shadow:10px 10px 20px rgb(82, 82, 82);}
+
+main img:hover {opacity:0.5}          
+
+@media only screen and (max-width: 900px) {
+  main img {width:40%;
+            margin:4%;}
+}
+
+@media only screen and (max-width: 600px) {
+  main img {width:80%;
+            margin:7%;}
+  nav ul li {display:block;}
+}     
+
+footer {background-color: #272724;
+    color:rgb(70, 51, 51);
+    font-weight:bold;
+    text-align:center;
+    padding:10px;}        
+    
+    
+      
+      .item-grid-4 h2 {
+        text-align: center;
+      }
+      
+      .item-grid-4 p {
+        text-align: center;
+        font-family: "Oswald", sans;
+        font-size: 1.3em;
+      }
+      
+       
+      
+      footer {
+          background-color:#eeddd7
+      }
+      
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+      
+      a {
+        font-family: "DroidSans", sans;
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width:950px){ /* tamaño tablet */       
+        .grid-4 {grid-template-columns: 50% 50%;}
+        #local {width:50%;} 
+    }
+    
+    @media only screen and (max-width:600px){ /* tamaño móvil */
+      #container {width:100%;}
+      #local {width:100%;}
+      #historia {text-align:left;}         
+      .grid-4 {grid-template-columns: 100%;}
+    }
+
+    #IMAGENES:{
+      background-color: rgb(241, 239, 239);
+      padding: 30px;
+    }
+    
+  #IMAGENES h1 {
+      color: #6f4a4a;
+      margin-bottom: 20px;
+    }
+    
+  #IMAGENES .row .column {
+      box-sizing:border-box;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
